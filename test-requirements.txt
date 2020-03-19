@@ -1,0 +1,4 @@
+responses==0.10.12
+pytest==5.4.1
+mock==4.0.2
+pyexpect==1.0.20
