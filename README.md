@@ -1,15 +1,26 @@
-**Deployment**
-Both backend anf frontend is deployed on azure.
+## Deployment
+Both backend and frontend is deployed on azure.
 
-
-**Requirements**:
+## Requirements
  - python3.5+
  - docker, docker-compose
  - node
 
-**To run on local system**: 
+## To run locally
 * Backend
+
 ```$ docker-compose up --build ```
 
-**Run Tests**
-   ```$ make test```
+## Tests
+
+```$ make test```
+
+
+## Screenshots
+### Backend swagger API
+![Alt text](https://github.com/iamneha/Places/blob/master/screenshot/Backend%20API.png "Backend Swagger API")
+
+
+### Frontend
+
+![Alt text](https://github.com/iamneha/Places/blob/master/screenshot/Frontend%20Coordinates.png "Frontend")
