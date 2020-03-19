@@ -1,7 +1,7 @@
 ## Deployment
-Both backend and frontend is deployed on azure.
-Backend - http://api-limehome-task.azurewebsites.net/api/v1/
-Frontend - https://limehome-task.azurewebsites.net/
+Please click on the link below to check both the services.
+* [Backend](http://api-limehome-task.azurewebsites.net/api/v1/)
+* [Frontend](https://limehome-task.azurewebsites.net/)
 
 
 ## Requirements
@@ -10,14 +10,12 @@ Frontend - https://limehome-task.azurewebsites.net/
  - node
 
 ## To run locally
-* Backend
+```$ make run```
 
-```$ docker-compose up --build ```
+Please redirect to [localhost:8000/api/v1](http://localhost:8000/api/v1) to check Backend API and [localhost:8001](http://localhost:8001) to check frontend
 
 ## Tests
-
 ```$ make test```
-
 
 ## Screenshots
 ### Backend swagger API
