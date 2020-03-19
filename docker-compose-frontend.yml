@@ -1,0 +1,15 @@
+version: '3'
+services:
+    frontend:
+        image: iamneha/limehome-frontend:latest
+        build:
+            context: .
+            dockerfile: docker/frontend/Dockerfile
+        environment:
+            API_KEY: 4SuDCKW-ku_HlZ23KGxKllm0iaO3CmIi3-g7OgOHr1I
+            ENV: local
+        restart: always
+        ports:
+          - "8001:8001"
+        expose:
+          - "8001"

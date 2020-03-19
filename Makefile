@@ -8,3 +8,6 @@ test-install: install
 
 test: test-install
 	pytest -s -v tests
+	
+run:
+	docker-compose -f docker-compose-backend.yml -f docker-compose-frontend.yml up --build

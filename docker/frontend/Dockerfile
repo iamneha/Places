@@ -1,6 +1,8 @@
 FROM node:10
 
 ENV PORT 8001
+ENV API_KEY 4SuDCKW-ku_HlZ23KGxKllm0iaO3CmIi3-g7OgOHr1I
+ENV ENV test
 
 COPY ./frontend/package*.json ./
 

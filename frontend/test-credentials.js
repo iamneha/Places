@@ -1,5 +1,0 @@
-var API_KEY = "4SuDCKW-ku_HlZ23KGxKllm0iaO3CmIi3-g7OgOHr1I"
-var BOOKING_URL = "https://api-limehome-task.azurewebsites.net/api/v1/bookings"
-var PROPERTY_URL = "https://api-limehome-task.azurewebsites.net/api/v1/properties"
-// var BOOKING_URL = "http://0.0.0.0:8000/api/v1/bookings"
-// var PROPERTY_URL = "http://0.0.0.0:8000/api/v1/properties"

@@ -53,12 +53,16 @@ function hotelBookings(username, email, latitude, longitude, property_name) {
   booking_params["property_latitude"] = longitude
   booking_params["property_longitude"] = latitude
 
-  console.log(booking_params)
   $.ajax({
     type: 'POST',
     url: window.BOOKING_URL,
     data: JSON.stringify(booking_params),
-    contentType: 'application/json'
+    contentType: 'application/json',
+    statusCode: {
+      200: function () {
+        alert("Successfully booked!");
+      }
+    }
   })
 }
 
@@ -99,7 +103,6 @@ function addInfoBubble(map, hotelsFromCoordinates = null) {
     }
   }
 }
-// 'onclick="' + "window.location.href='booking.html'" + '">Book' +
 
 function getLocationFromCoordinates() {
   var Latitude = document.getElementById("latitude");
