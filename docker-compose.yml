@@ -1,0 +1,32 @@
+version: '3'
+services:
+    backend:
+        image: iamneha/limehome-backend:latest
+        build:
+            context: .
+            dockerfile: docker/backend/Dockerfile
+        restart: always
+        environment:
+            API_KEY: 4SuDCKW-ku_HlZ23KGxKllm0iaO3CmIi3-g7OgOHr1I
+            POSTGRES_USER: limehome_user
+            POSTGRES_HOST: postgres
+            POSTGRES_PASSWORD: limehome_passwd
+            POSTGRES_DB: limehomedb
+            POSTGRES_PORT: 5432
+        links:
+            - postgres
+        ports:
+          - "8000:8000"
+        expose:
+          - "8000"
+        depends_on:
+          - postgres
+
+    postgres:
+        image: postgres:latest
+        restart: always
+        environment:
+            LC_ALL: C.UTF-8
+            POSTGRES_USER: limehome_user
+            POSTGRES_PASSWORD: limehome_passwd
+            POSTGRES_DB: limehomedb
