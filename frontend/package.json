@@ -1,0 +1,20 @@
+{
+    "name": "limehome-webpack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/heremaps": "^3.1.0",
+        "@types/jquery": "^3.3.33"
+    },
+    "devDependencies": {
+        "webpack": "^4.42.0",
+        "webpack-cli": "^3.3.11"
+    }
+}

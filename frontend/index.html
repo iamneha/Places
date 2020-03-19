@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+    <title>Map at a specified location</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/template.css" />
+    <script type="text/javascript" src='test-credentials.js'></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body id="markers-on-the-map">
+    <div class="page-header">
+        <h1>Map at a specified location</h1>
+        <p>Display a map at a specified location and zoom level</p>
+        <form class="form-inline">
+            <label for="latitude">Latitude:</label>
+            <input id="latitude" placeholder="Latitude" name="Latitude">
+            <label type="text" for="longitude">Longitude:</label>
+            <input type="text" id="longitude" placeholder="Longitude" name="Longitude">
+            <button type="button" onclick='getLocationFromCoordinates()'>Search</button>
+        </form>
+    </div>
+    <br>
+    <div id="map">
+    </div>
+    <script type="text/javascript" src='scripts/index.js'></script>
+</body>
+
+</html>

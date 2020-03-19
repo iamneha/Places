@@ -37,4 +37,4 @@ ENV/
 dmypy.json
 
 # Node module
-node_modules/*
+frontend/node_modules/*
